@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alfie</title>
+	<title>ALFIE</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap4/font/fontawesome/web-fonts-with-css/css/fontawesome-all.css">
 	<link rel="stylesheet" type="text/css" href="wowjs/css/libs/animate.css">
@@ -198,7 +198,7 @@
 	<header>
 		<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
 			<a href="#" class="navbar-brand offset-1 mt-1">
-				<img src="img/logo/logo-white.png"></a>
+				<img src="img/logo/logo-white.png" class="logo"></a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#target">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -226,7 +226,7 @@
 						<a href="#" class="nav-link" style="color: white">Contact Us</a>
 					</li>
 				</ul>
-			</div>			
+			</div>
 		</nav>
 		<div class="text-center h2 " style="padding-top: 28vh; color:	#ffffff">ALFIE
 		<div class="mt-2">
@@ -650,12 +650,14 @@
 		 			{
 		 				$('.fixed-top').css('background-color','transparent');
 		 				$('.nav-link').css('color','white');
+						$('.logo') .attr("src", "img/logo/logo-white.png");
 
 		 			}
 		 			else
 		 			{
 		 				$('.fixed-top').css('background-color','white');
 		 				$('.nav-link').css('color','black');
+						$('.logo') .attr("src", "img/logo/logo-black.png");
 		 			}
 		 		})
 		 	}
